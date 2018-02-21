@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "faune";
+	src: url("Faune-DisplayBlack.otf");
+}
+
+body {
+	background-color: #001c51;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	color: #ecf2fc;
+	font-family: "faune", serif;
+	font-size: 70px;
+}
+
+h2 {
+	color: #ecf2fc;
+	font-family: "faune", serif;
+	font-size: 50px;
+}
