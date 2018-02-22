@@ -1,0 +1,199 @@
+@font-face {
+	src: url("../assets/Faune-TextRegular.otf") format('truetype');
+	font-family: "faune-regular";
+}
+
+@font-face {
+	src: url("../assets/Faune-DisplayBoldItalic.otf") format('truetype');
+	font-family: "faune-bold-italic";
+}
+
+@font-face {
+	src: url("../assets/Faune-DisplayBlack.otf") format('truetype');
+	font-family: "faune-black";
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	background: url("../assets/background.png") no-repeat center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+html, body {
+	height: 100%;
+}
+
+.text {
+	font-family: faune-regular, serif;
+	color: #ecf2fc;
+	font-weight: lighter;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+	padding-top: 4%;
+}
+
+.titles-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.title {
+	font-family: faune-bold-italic, serif;
+	font-weight: lighter;
+	font-size: 65pt;
+	margin-bottom: 0;
+	color: #ecf2fc;
+}
+
+.sub-title {
+	font-size: 20pt;
+	margin-top: -5pt;
+	flex: 3
+}
+
+.description-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3%;
+}
+
+.description {
+	font-size: 11pt;
+	max-width: 25%;
+	margin-top: 1%;
+}
+
+.button-container {
+	margin-top: 7%;
+}
+
+.button {
+	background-color: #2b82f5;
+	border: none;
+	color: #ecf2fc;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16pt;
+	font-family: faune-black, serif;
+	padding: 5pt 15pt;
+	cursor: pointer;
+}
+
+.button-submit {
+	padding: 2pt 10pt;
+	align-self: flex-end;
+}
+
+.footer {
+	bottom: 2%;
+	position: absolute;
+	font-size: 8pt;
+}
+
+.modal {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.3);
+	animation: opacity 2s ease-in;
+	-moz-animation: opacity 2s ease-in;
+	-webkit-animation: opacity 2s ease-in;
+	-o-animation: opacity 2s ease-in;
+	transition: opacity 2s ease-in;
+}
+
+.modal.hidden {
+	display: none;
+}
+
+.modal-content {
+	background-color: #ecf2fc;
+	margin: 17% auto;
+	padding: 20pt;
+	width: 17%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.mc_embed_signup {
+	background: #ecf2fc;
+	clear: left;
+	font-family: faune-regular, serif;
+	width: 100%;
+}
+
+.email-label {
+	color: #001c51;
+}
+
+.email {
+	color: #001c51;
+}
+
+.modal-bot-container {
+	margin-top: 2%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
